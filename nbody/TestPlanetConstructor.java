@@ -17,7 +17,7 @@ public class TestPlanetConstructor {
      *  @param  actual      Double received
      *  @param  label       Label for the 'test' case
      */
-    private static void checkEquals(double expected, double actual, String label) {
+    public static void checkEquals(double expected, double actual, String label) {
         if (expected == actual) {
             System.out.println("PASS: " + label
                     + ": Expected " + expected
@@ -35,7 +35,7 @@ public class TestPlanetConstructor {
      *  @param  actual      String received
      *  @param  label       Label for the 'test' case
      */
-    private static void checkStringEquals(String expected, String actual, String label) {
+    public static void checkStringEquals(String expected, String actual, String label) {
         if (expected.equals(actual)) {
             System.out.println("PASS: " + label
                     + ": Expected " + expected
@@ -51,7 +51,7 @@ public class TestPlanetConstructor {
      *  Checks Planet constructors to make sure they are setting instance
      *  variables correctly.
      */
-    private static void checkPlanetConstructor() {
+    public static void checkPlanetConstructor() {
         System.out.println("Checking first Planet constructor...");
 
         double xxPos = 1.0,
